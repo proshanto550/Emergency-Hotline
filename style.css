@@ -10,6 +10,8 @@ body{
     background-color: #F5FFF6;
 }
 
+/* Navbar Style */
+
 .top-section{
     display: flex;
     justify-content: space-between;
@@ -84,3 +86,32 @@ span{
     align-items: center;
 }
 
+/* Banner Style Here */
+
+.banner-logo {
+    height: 92px;
+}
+
+.banner {
+    text-align: center;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    /* background: linear-gradient(#013223, #006747); */
+    background: linear-gradient(90.00deg, rgba(1.251827359199524, 49.64006805419922, 34.606834411621094, 1),rgba(0, 103, 71, 1) 50%,rgba(1, 50, 35, 1) 100%);
+    color: white;
+    margin-bottom: 5px;
+}
+
+.banner h1{
+    margin-top: 5px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.banner p {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight:700;
+    margin-bottom: 10px;
+}
