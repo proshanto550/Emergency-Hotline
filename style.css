@@ -66,7 +66,7 @@ body{
     align-items: center;
 }
 
-span{
+.heart-count, .star-count{
     font-size: 16px;
     font-weight: bolder;
 }
@@ -114,4 +114,101 @@ span{
     font-size: 20px;
     font-weight:700;
     margin-bottom: 10px;
+}
+
+/* Service Section */
+
+.services{
+    margin: 48px 58px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.history-item {
+    width: 350px;
+    background-color: white;
+    border: none;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    grid-column: 4 / 5;
+    grid-row: 1 / 4;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.item {
+    border: none;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
+    padding: 32px 32px;
+    gap: 16px;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.card-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    padding-right: 20px;
+}
+
+.card-details{
+    margin-top: 8px;
+}
+
+.card-nav img {
+    height: 60px;
+}
+
+.love {
+    color: gray;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.sub-title {
+    margin-top: 0px;
+    font-size: 18px;
+    color: gray;
+    margin-bottom: 12px;
+}
+
+.dial {
+    margin-top: 12px;
+    margin-bottom: 2px;
+}
+
+.service-type{
+    border: none;
+    background-color: #F2F2F2;
+    padding: 6px 16px;
+    border-radius: 40px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.copy-btn{
+    width: calc(50% - 10px);
+    border: 1px solid #D4D6D5;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: white;
+}
+
+.call-btn {
+    margin-left: 10px;
+    width: calc(50% - 10px);
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: green;
+    color: white;
 }
