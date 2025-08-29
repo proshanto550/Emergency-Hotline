@@ -35,18 +35,42 @@ document.getElementById("love9").addEventListener("click", function(){
 
 
 // Call with History Functionality
-function calling (numberBtn, serviceBtn) {
+const historyData = [];
+function calling(numberBtn, serviceBtn) {
     let coins = parseInt(document.getElementById("coin").innerText);
-    if(coins < 20) {
+    if (coins < 20) {
         alert("Not enough coins (min 20 coins) to make a call");
         return;
     }
-        const number = document.getElementById(numberBtn).textContent.trim();
-        const service = document.getElementById(serviceBtn).textContent.trim();
-        coins = coins - 20;
-        alert(`📞Calling ${service} ${number} `);
-        document.getElementById("coin").innerText = coins;
+
+    const number = document.getElementById(numberBtn).textContent.trim();
+    const service = document.getElementById(serviceBtn).textContent.trim();
+    coins -= 20;
+
+    alert(`📞 Calling ${service} ${number}`);
+    document.getElementById("coin").innerText = coins;
+
+    const data = {
+        name: service,
+        numb: number,
+        date: new Date().toLocaleTimeString()
+    };
+
+    const historyContainer = document.getElementById("history-item");
+    const div = document.createElement('div');
+    div.innerHTML = `
+        <div class="history1">
+            <div>
+                <h6>${data.name}</h6>
+                <h6>${data.numb}</h6>
+            </div>
+            <p>${data.date}</p>
+        </div>
+    `;
+
+    historyContainer.appendChild(div);
 }
+
 
 document.getElementById("call-btn1").addEventListener("click", function() {
     calling("num1", "service1");
