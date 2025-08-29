@@ -161,7 +161,21 @@ body{
 }
 
 .card-nav img {
-    height: 60px;
+    height: 32px;
+}
+
+.service-img{
+    background-color: #FFE3E2;
+    padding: 5px 8px;
+    border: none;
+    border-radius: 10px;
+}
+
+.police-img{
+    background-color: #DFEFFF;
+    padding: 5px 8px;
+    border: none;
+    border-radius: 10px;
 }
 
 .love {
@@ -211,4 +225,15 @@ body{
     padding: 12px;
     background-color: green;
     color: white;
+}
+
+/* History Design */
+.history-icon {
+    color: gray;
+}
+
+.history-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
