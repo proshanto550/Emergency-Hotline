@@ -29,9 +29,9 @@
             <div class="logo-title"><p>Emergency <br>Service</p></div>
         </div>
         <div class="btn-div">
-            <div class="star"><span class="heart-count">0</span> <img class="heart-img" src="assets/heart.png" alt=""></div>
-            <div class="star"><span class="star-count">200</span> <img class="star-img" src="assets/coin.png" alt=""></div>
-            <div class="copy"><span class="copy-count">0</span>Copy</div>
+            <div class="star"><span id="heart-count">0</span> <img class="heart-img" src="assets/heart.png" alt=""></div>
+            <div class="star"><span id="coin">100</span> <img class="star-img" src="assets/coin.png" alt=""></div>
+            <div class="copy"><span id="copy-count">0</span>Copy</div>
         </div>
     </nav>
 
@@ -46,20 +46,21 @@
         <div class="item">
             <div class="card-nav">
                 <div class="service-img"><img src="assets/emergency.png" alt=""></div>
-                <div class="love"><i class="fa-regular fa-heart"></i></div>
+                <div id="love1"><i class="fa-regular fa-heart"></i></div>
             </div>
             <div class="card-details">
                 <div>
-                    <h2 class="card-title">National Emergency Number</h2>
+                    <h2 id="service1" class="card-title">National Emergency Number</h2>
+                    <span id="divMsg1" class="msg" aria-live="polite"></span>
                     <p class="sub-title">National Emergency</p>
                 </div>
                 <div>
-                    <h1 class="dial">999</h1>
+                    <h1 id="num1" class="dial">999</h1>
                     <span class="service-type">All</span>
                 </div>
                 <div class="card-btn">
-                    <button class="copy-btn"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button class="call-btn"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button id="copy1" class="copy-btn"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button id="call-btn1" class="call-btn"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
         </div>
@@ -67,171 +68,181 @@
         <!-- History Section -->
         <div class="history-item">
             <div class="history-nav">
-                <h1><i class="fa-solid fa-clock-rotate-left history-icon"></i> Call History</h1>
-                <button class="copy">Clear</button>
+                <h4><i class="fa-solid fa-clock-rotate-left history-icon"></i> Call History</h4>
+                <button class="clear-btn">Clear</button>
             </div>
         </div>
 
         <div class="item">
             <div class="card-nav">
                 <div class="police-img"><img src="assets/police.png" alt=""></div>
-                <div class="love"><i class="fa-regular fa-heart"></i></div>
+                <div id="love2"><i class="fa-regular fa-heart"></i></div>
             </div>
             <div class="card-details">
                 <div>
-                    <h2 class="card-title">Police Helpline Number</h2>
+                    <h2 id="service2" class="card-title">Police Helpline Number</h2>
+                    <span id="divMsg2" class="msg" aria-live="polite"></span>
                     <p class="sub-title">Police</p>
                 </div>
                 <div>
-                    <h1 class="dial">999</h1>
+                    <h1 id="num2" class="dial">999</h1>
                     <span class="service-type">Police</span>
                 </div>
                 <div class="card-btn">
-                    <button class="copy-btn"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button class="call-btn"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button id="copy2" class="copy-btn"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button id="call-btn2" class="call-btn"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
         </div>
         <div class="item">
             <div class="card-nav">
                 <div class="service-img"><img src="assets/fire-service.png" alt=""></div>
-                <div class="love"><i class="fa-regular fa-heart"></i></div>
+                <div id="love3"><i class="fa-regular fa-heart"></i></div>
             </div>
             <div class="card-details">
                 <div>
-                    <h2 class="card-title">Fire Service Number</h2>
+                    <h2 id="service3" class="card-title">Fire Service Number</h2>
+                    <span id="divMsg3" class="msg" aria-live="polite"></span>
                     <p class="sub-title">Fire Service</p>
                 </div>
                 <div>
-                    <h1 class="dial">999</h1>
+                    <h1 id="num3" class="dial">999</h1>
                     <span class="service-type">Fire</span>
                 </div>
                 <div class="card-btn">
-                    <button class="copy-btn"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button class="call-btn"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button id="copy3" class="copy-btn"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button id="call-btn3" class="call-btn"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
         </div>
         <div class="item">
             <div class="card-nav">
                 <div class="service-img"><img src="assets/ambulance.png" alt=""></div>
-                <div class="love"><i class="fa-regular fa-heart"></i></div>
+                <div id="love4"><i class="fa-regular fa-heart"></i></div>
             </div>
             <div class="card-details">
                 <div>
-                    <h2 class="card-title">Ambulance Service</h2>
+                    <h2 id="service4" class="card-title">Ambulance Service</h2>
+                    <span id="divMsg4" class="msg" aria-live="polite"></span>
                     <p class="sub-title">Ambulance</p>
                 </div>
                 <div>
-                    <h1 class="dial">1994-999999</h1>
+                    <h1 id="num4" class="dial">1994-999999</h1>
                     <span class="service-type">Health</span>
                 </div>
                 <div class="card-btn">
-                    <button class="copy-btn"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button class="call-btn"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button id="copy4" class="copy-btn"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button id="call-btn4" class="call-btn"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
         </div>
         <div class="item">
             <div class="card-nav">
                 <div class="service-img"><img src="assets/emergency.png" alt=""></div>
-                <div class="love"><i class="fa-regular fa-heart"></i></div>
+                <div id="love5"><i class="fa-regular fa-heart"></i></div>
             </div>
             <div class="card-details">
                 <div>
-                    <h2 class="card-title">Women & Child Helpline</h2>
+                    <h2 id="service5" class="card-title">Women & Child Helpline</h2>
+                    <span id="divMsg5" class="msg" aria-live="polite"></span>
                     <p class="sub-title">Women & Child Helpline</p>
                 </div>
                 <div>
-                    <h1 class="dial">109</h1>
+                    <h1 id="num5" class="dial">109</h1>
                     <span class="service-type">Help</span>
                 </div>
                 <div class="card-btn">
-                    <button class="copy-btn"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button class="call-btn"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button id="copy5" class="copy-btn"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button id="call-btn5" class="call-btn"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
         </div>
         <div class="item">
             <div class="card-nav">
                 <div class="service-img"><img src="assets/emergency.png" alt=""></div>
-                <div class="love"><i class="fa-regular fa-heart"></i></div>
+                <div id="love6"><i class="fa-regular fa-heart"></i></div>
             </div>
             <div class="card-details">
                 <div>
-                    <h2 class="card-title">Anti-Corruption Helpline</h2>
+                    <h2 id="service6" class="card-title">Anti-Corruption Helpline</h2>
+                    <span id="divMsg6" class="msg" aria-live="polite"></span>
                     <p class="sub-title">Anti-Corruption</p>
                 </div>
                 <div>
-                    <h1 class="dial">106</h1>
+                    <h1 id="num6" class="dial">106</h1>
                     <span class="service-type">Govt.</span>
                 </div>
                 <div class="card-btn">
-                    <button class="copy-btn"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button class="call-btn"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button id="copy6" class="copy-btn"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button id="call-btn6" class="call-btn"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
         </div>
         <div class="item">
             <div class="card-nav">
                 <div class="service-img"><img src="assets/emergency.png" alt=""></div>
-                <div class="love"><i class="fa-regular fa-heart"></i></div>
+                <div id="love7"><i class="fa-regular fa-heart"></i></div>
             </div>
             <div class="card-details">
                 <div>
-                    <h2 class="card-title">Electricity Helpline</h2>
+                    <h2 id="service7" class="card-title">Electricity Helpline</h2>
+                    <span id="divMsg7" class="msg" aria-live="polite"></span>
                     <p class="sub-title">Electricity Outage</p>
                 </div>
                 <div>
-                    <h1 class="dial">16216</h1>
+                    <h1 id="num7" class="dial">16216</h1>
                     <span class="service-type">Electricity</span>
                 </div>
                 <div class="card-btn">
-                    <button class="copy-btn"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button class="call-btn"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button id="copy7" class="copy-btn"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button id="call-btn7" class="call-btn"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
         </div>
         <div class="item">
             <div class="card-nav">
                 <div class="service-img"><img src="assets/brac.png" alt=""></div>
-                <div class="love"><i class="fa-regular fa-heart"></i></div>
+                <div id="love8"><i class="fa-regular fa-heart"></i></div>
             </div>
             <div class="card-details">
                 <div>
-                    <h2 class="card-title">Brac Helpline</h2>
+                    <h2 id="service8" class="card-title">Brac Helpline</h2>
+                    <span id="divMsg8" class="msg" aria-live="polite"></span>
                     <p class="sub-title">Brac</p>
                 </div>
                 <div>
-                    <h1 class="dial">16445</h1>
+                    <h1 id="num8" class="dial">16445</h1>
                     <span class="service-type">NGO</span>
                 </div>
                 <div class="card-btn">
-                    <button class="copy-btn"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button class="call-btn"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button id="copy8" class="copy-btn"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button id="call-btn8" class="call-btn"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
         </div>
         <div class="item">
             <div class="card-nav">
                 <div class="service-img"><img src="assets/Bangladesh-Railway.png" alt=""></div>
-                <div class="love"><i class="fa-regular fa-heart"></i></div>
+                <div id="love9"><i class="fa-regular fa-heart"></i></div>
             </div>
             <div class="card-details">
                 <div>
-                    <h2 class="card-title">Bangladesh Railway Helpline</h2>
+                    <h2 id="service9" class="card-title">Bangladesh Railway Helpline</h2>
+                    <span id="divMsg9" class="msg" aria-live="polite"></span>
                     <p class="sub-title">Bangladesh Railway</p>
                 </div>
                 <div>
-                    <h1 class="dial">163</h1>
+                    <h1 id="num9" class="dial">163</h1>
                     <span class="service-type">Travel</span>
                 </div>
                 <div class="card-btn">
-                    <button class="copy-btn"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button class="call-btn"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button id="copy9" class="copy-btn"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button id="call-btn9" class="call-btn"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
         </div>
     </section>
+
+    <script src="scrip.js"></script>
 </body>
 </html>
