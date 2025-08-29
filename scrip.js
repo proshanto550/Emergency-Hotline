@@ -35,7 +35,6 @@ document.getElementById("love9").addEventListener("click", function(){
 
 
 // Call with History Functionality
-const historyData = [];
 function calling(numberBtn, serviceBtn) {
     let coins = parseInt(document.getElementById("coin").innerText);
     if (coins < 20) {
@@ -56,7 +55,7 @@ function calling(numberBtn, serviceBtn) {
         date: new Date().toLocaleTimeString()
     };
 
-    const historyContainer = document.getElementById("history-item");
+    const historyContainer = document.getElementById("history-it");
     const div = document.createElement('div');
     div.innerHTML = `
         <div class="history1">
@@ -99,6 +98,12 @@ document.getElementById("call-btn8").addEventListener("click", function() {
 document.getElementById("call-btn9").addEventListener("click", function() {
     calling("num9", "service9");
 })
+
+
+document.getElementById("clear").addEventListener("click", function() {
+    const Container = document.getElementById("history-it");
+    Container.innerHTML = "";
+});
 
 
 
